@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main -  prints something
+ *
+ * Returns something if it functions
+ */
 
 int main(void)
 {
