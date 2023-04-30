@@ -6,7 +6,8 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	for(int i = 0; n>0;i++)
+	int r = 0;
+	for(int i = n;r<i;i++)
 	{
 		strcpy(dest[i], src[i]);
 		n--;
