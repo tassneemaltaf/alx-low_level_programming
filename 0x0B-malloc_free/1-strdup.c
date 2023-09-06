@@ -23,5 +23,8 @@ char *_strdup(char *str)
 
 	strcp[i] = '\0';
 
+	if (strcp == NULL)
+		return (NULL);
+
 	return (strcp);
 }
