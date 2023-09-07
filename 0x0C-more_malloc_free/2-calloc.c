@@ -3,13 +3,13 @@
 /**
  * _calloc - allocates memory for an array, using malloc.
  * @nmemb: number of elements
- * @size of bytes
+ * @size: size of bytes
  * Return: null if malloc fails, pointer to array if succeeds
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *ar;
-	int i;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
