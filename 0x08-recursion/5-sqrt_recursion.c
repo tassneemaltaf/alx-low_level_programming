@@ -6,4 +6,24 @@
  */
 int _sqrt_recursion(int n)
 {
-		
+	int num;
+	
+	num = n / 2;
+
+	if ((num * num - n) < 0.0001)
+	{
+		if (num * num != n)
+		{
+			return (-1);
+		}
+		else
+		{
+			return (num);
+		}
+	}
+	else
+	{
+		_sqrt_recursion(num + 2);
+	}
+	return (1);
+}	
