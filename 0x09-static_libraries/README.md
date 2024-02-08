@@ -1,6 +1,6 @@
 This folder contains the tasks for static libraries in c.
 
-The first task I created a library named libmy.a, that contained all of these functions:
+In the first task I created a library named libmy.a, that contained files that implemented all of these functions:
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
@@ -21,3 +21,5 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
+
+As per the second task, here I had to create a shell script with the command to compile all the .c files again, and then create a library called liball.a.
