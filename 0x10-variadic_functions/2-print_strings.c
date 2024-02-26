@@ -10,6 +10,7 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list my_strings;
+	char *str;
 	unsigned int i;
 
 	va_start(my_strings, n);
@@ -21,13 +22,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
+		str = va_arg(my_strings, char *);
+
 		if (i == (n - 1))
 		{
-			printf("%s ", va_arg(my_strings, char *));
+			printf("%s ", str);
 		}
 		else
 		{
-			printf("%s%s ", va_arg(my_strings, char *), separator);
+			printf("%s%s ", str, separator);
 		}
 	}
 	printf("\n");
